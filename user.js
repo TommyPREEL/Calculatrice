@@ -11,7 +11,7 @@ export class User{
     }
 
     isValid(){
-        let regex = new RegExp('[a-z0-9]+@[a-z]+\.[a-z]{2,3}');
+        let regex = new RegExp('[a-z0-9]+@[a-z]+\.[a-z]{2,}');
         let check = false;
         if(regex.test(this.email)){
             if(!(this.nom == "" || this.nom == null)){
